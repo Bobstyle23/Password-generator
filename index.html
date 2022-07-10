@@ -20,7 +20,7 @@
     <section >
         <h1 class="password-text">Never use an insecure password again.</h1>
     </section>
-    <button onclick="generatePassword()" class="generate-btn">
+    <button onclick="!userLength.value  ? generatePassword() : generatePasswordOnUserSelect()" class="generate-btn">
         Generate passwords
     </button>
     <div class="divider"></div>

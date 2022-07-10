@@ -97,6 +97,7 @@ const passwordTwo = document.getElementById("password--value__two");
 
 const userLength = document.getElementById("length");
 
+//function to copy on click
 function copyOnClick(password) {
   password.addEventListener("copy", (e) => {
     e.preventDefault();
@@ -109,14 +110,26 @@ function copyOnClick(password) {
   showSnackBar();
 }
 
+//to get random characters from characters array
 function generatePassword() {
+  let firstPassword = "";
+  let secondPassword = "";
+  for (let i = 0; i < 15; i++) {
+    firstPassword += characters[Math.floor(Math.random() * characters.length)];
+    secondPassword += characters[Math.floor(Math.random() * characters.length)];
+  }
+
+  passwordOne.textContent = firstPassword;
+  passwordTwo.textContent = secondPassword;
+}
+
+function generatePasswordOnUserSelect() {
   let firstPassword = "";
   let secondPassword = "";
   for (let i = 0; i < userLength.value; i++) {
     firstPassword += characters[Math.floor(Math.random() * characters.length)];
     secondPassword += characters[Math.floor(Math.random() * characters.length)];
   }
-
   passwordOne.textContent = firstPassword;
   passwordTwo.textContent = secondPassword;
 }

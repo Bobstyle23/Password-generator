@@ -126,13 +126,13 @@ body{
     visibility: hidden;
     color: #fff;
     background-color: rgba(16, 185, 129, 1);
-    min-width: 250px;
-    margin-left: -125px;
-    border-radius: 2px;
-    padding: 16px;
+    min-width: 25rem;
+    margin-left: -12.5rem;
+    border-radius: 0.6rem;
+    padding: 1.6rem;
     text-align: center;
     left: 50%;
-    bottom: 30px;
+    bottom: 3rem;
     z-index: 1;
     position: fixed;
     font-size: 1.6rem;
