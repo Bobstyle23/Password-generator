@@ -108,6 +108,7 @@ function copyOnClick(password) {
   });
   document.execCommand("copy");
   showSnackBar();
+
 }
 
 //to get random characters from characters array
@@ -141,3 +142,5 @@ function showSnackBar() {
     sb.className = sb.className.replace("show", "");
   }, 3000);
 }
+
+
